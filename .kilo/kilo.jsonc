@@ -1,0 +1,8 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "permission": {
+    "read": { "*": "allow", "*.env*": "deny" },
+    "edit": { "*": "allow", "*.env*": "deny", "kilo.jsonc": "deny" },
+    "bash": { "*": "ask", "git *": "allow", "git push*": "ask", "make *": "allow", "*.env*": "deny", "*reset_db*": "deny", "git push --force*": "deny", "rm -rf*": "deny" }
+  }
+}
